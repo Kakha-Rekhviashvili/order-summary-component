@@ -1,0 +1,134 @@
+:root {
+  --descriptive_text: rgba(31, 46, 85, 1);
+  --lite_text: #717fa6;
+  --blue: rgba(56, 42, 225, 1);
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-image: src("images\pattern-background-desktop.svg");
+  background-color: rgba(214, 225, 255, 1);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 697px;
+  width: 450px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.container > img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+h1 {
+  line-height: 37.04px;
+  font-family: inherit;
+  font-size: 28px;
+  color: var(--descriptive_text);
+  text-align: center;
+  font-weight: 900;
+  margin-top: 40px;
+}
+
+.container > p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--lite_text);
+  line-height: 26px;
+  margin: 17px 48px 0 48px;
+}
+
+.plan {
+  display: flex;
+  position: relative;
+  padding: 0 24px 0 24px;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin: 20px 48px 0 48px;
+  background-color: #f7f9ff;
+  border-radius: 11px;
+  height: 98px;
+}
+
+.plan > div > p {
+  line-height: 21.17px;
+  font-size: 16px;
+  margin: 3px;
+}
+
+.plan > div {
+  position: absolute;
+  margin: 65px;
+}
+
+.plan > div > p:first-child {
+  font-weight: 900;
+  color: var(--descriptive_text);
+}
+
+.plan > div > :nth-child(2) {
+  font-weight: 500;
+  color: var(--lite_text);
+}
+
+#change {
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 18.52px;
+  color: #382ae1;
+}
+
+#change:hover {
+  cursor: pointer;
+  color: rgba(118, 108, 241, 1);
+  text-decoration: none;
+}
+
+#proceed {
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 50px;
+  color: white;
+  background-color: var(--blue);
+  padding: 15px autp 15px auto;
+  border-radius: 11px;
+  margin-top: 27px;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.1903);
+}
+
+#proceed:hover {
+  cursor: pointer;
+  background-color: rgba(118, 108, 241, 1);
+}
+
+#cancel {
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 19.85px;
+  color: rgba(113, 127, 166, 1);
+  margin-top: 32px;
+}
+
+#cancel:hover {
+  cursor: pointer;
+  color: var(--descriptive_text);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    height: 567px;
+    width: 327px;
+  }
+}
